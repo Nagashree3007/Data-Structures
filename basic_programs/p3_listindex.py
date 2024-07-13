@@ -3,7 +3,7 @@
 @Date: 2024-07-12
 @Last Modified by: Nagashree C R
 @Last Modified: 2024-07-12
-@Title : program to display the first and last colors from the following list.
+@Title : program to display the first and last colors from the list.
 '''
 
 

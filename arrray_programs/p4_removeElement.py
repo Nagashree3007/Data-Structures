@@ -1,11 +1,22 @@
 '''
+
 @Author: Nagashree C R
 @Date: 2024-07-12
 @Last Modified by: Nagashree C R
 @Last Modified: 2024-07-12
 @Title : Removing the frist Occurrence of the element
+
+
 '''
 
+
+import os
+
+import loggingfile
+
+current_scriptname=os.path.basename(__file__)
+
+logger=loggingfile.logg(current_scriptname)
 
 def remove_first_occurrence(arr, element):
     """
@@ -20,11 +31,14 @@ def remove_first_occurrence(arr, element):
         arr.remove(element)
 
 
+
 def main():
     arr = [1, 2, 3, 4, 2, 2, 3, 1, 1]
     element = 2
 
-    print("**Original array** :----> ", arr)
+    logger.debug(f"**Original array** :----> {arr}")
     remove_first_occurrence(arr, element)
-    print("**Array after removed** :--->", element, ":", arr)
+    logger.debug(f"**Array after removing the first occurance of {element} is ** :--->{arr} ")
 
+if __name__=='__main__':
+    main()
